@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Germany Car Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<div class="two-columns-grid">
+    <form class="form">
+        <h2>Mileage</h2>
+        <input class="area" type="text" id="uiMileage" class="floatLabel" name="Mileage" value="1000">
+        <h2>Year</h2>
+        <input class="area" type="text" id="uiYear" class="floatLabel" name="Mileage" value="2000">
+        <h2>Make</h2>
+        <select class="location" name="" id="uiMake">
+            <option value="" disabled="disabled" selected="selected">Choose Maker</option>
+            <option>BMW</option>
+            <option>Audi</option>
+        </select>
+        <h2>Offer Type</h2>
+        <select class="location" name="" id="uiOffer">
+            <option value="" disabled="disabled" selected="selected">Choose Offer Type</option>
+            <option>Used</option>
+            <option>New</option>
+        </select>
+    </form>
+    <form class="form">
+        <h2>Model</h2>
+        <select class="location" name="" id="uiModel">
+            <option value="" disabled="disabled" selected="selected">Choose a Model</option>
+            <option>M3</option>
+            <option>A5</option>
+        </select>
+        <h2>Fuel</h2>
+        <div>
+            <select class="location" name="" id="uiFuel">
+                <option value="" disabled="disabled" selected="selected">Choose a Fuel Type</option>
+                <option>Gasoline</option>
+                <option>Hybrid</option>
+            </select>
+        </div>
+        <h2>Transmission</h2>
+        <div>
+            <select class="location" name="" id="uiTransmission">
+                <option value="" disabled="disabled" selected="selected">Choose a Transmission Type</option>
+                <option>Manual</option>
+                <option>Automatic</option>
+            </select>
+        </div>
+
+
+</div>
+
+<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+<div id="uiEstimatedPrice" class="result"><h2></h2></div>
+</body>
+</html>
