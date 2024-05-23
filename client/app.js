@@ -69,7 +69,7 @@
                 $('#uiOffer').append(opt);
             }
             $('#uiModel').empty();
-            for(var i in offerTypes) {
+            for(var i in models) {
                 var opt = new Option(models[i]);
                 $('#uiModel').append(opt);
             }
